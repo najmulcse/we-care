@@ -14,9 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-//Admin route section started......
+Route::any('/searchResult',['as'=> 'search.result', 'uses'=>'SearchController@searchResult']);
+//Admin routes section started......
 
 //-------------------------------------//
 
-Route::get('/admin', ['as'=>'welcome.admin', 'uses'=>'AdminController@index']);
+Route::group(['prefix'=>'admin'], function(){
+	Route::get('/', ['as'=>'welcome.admin', 'uses'=>'AdminController@index']);
+	Route::get('/addUser', ['as'=>'admin.addUser', 'uses'=>'AdminController@addUser']);
+	Route::get('/allUsers', ['as'=>'admin.allUsers', 'uses'=>'AdminController@allUsers']);
+	Route::post('/store', ['as'=>'admin.storeUser', 'uses'=>'AdminController@storeUser']);
+});

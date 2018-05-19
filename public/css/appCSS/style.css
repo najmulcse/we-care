@@ -24,7 +24,9 @@ body {
   line-height:1.6em;
   overflow-x:hidden;
 }
-
+.select_option_list{
+color:green;
+}
 h1,
 h2,
 h3,
@@ -220,7 +222,7 @@ hr {
   position: absolute;
   top: 50%;
   width: 50px;
-  color:#fff;
+  /*color:#fff;*/
 }
 
 #carousel-slider a i:hover {
@@ -259,7 +261,7 @@ hr {
   left: 15%;
   z-index: 10;
   padding-bottom: 0px;
-  color: #fff;
+
   text-align: center;
 }
 
@@ -270,45 +272,43 @@ hr {
 
 .carousel-caption  h2 span {
 	font-size:60px;
-	color: #fff;
+	/*color: #fff;*/
 }
 
 .carousel-caption  p {
   font-size:30px;
   margin-top:30px;
-  color:#fff;
+ /* color:#fff;*/
 }
 
 .carousel-inner .form-inline .form-group button[type="livedemo"]{
 	padding:20px 60px;
 	font-size:25px;
-	background:#0BA9F9;
-	color:#fff;
+	background:;
+	
 }
 
 .carousel-inner .form-inline .form-group button[type="livedemo"]:hover {
-	color:#0BA9F9;
-	background:#fff;
-	-webkit-transition: color 300ms, background-color 300ms;
+
+	
+/*	-webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
-  transition:  color 300ms, background-color 300ms;
+  transition:  color 300ms, background-color 300ms;*/
 }
 
 .carousel-inner .form-inline .form-group button[type="getnow"]{
 	padding:20px 60px;
 	font-size:25px;
-	background:#fff;
-	color:#0BA9F9;
+	
 }
 
 .carousel-inner .form-inline .form-group button[type="getnow"]:hover {
-	color:#fff;
-	background:#0BA9F9;
-	-webkit-transition: color 300ms, background-color 300ms;
+	
+	/*-webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
-  transition:  color 300ms, background-color 300ms;
+  transition:  color 300ms, background-color 300ms;*/
 }
 
 /*************************
